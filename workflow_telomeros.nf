@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
 
 // General Params
-params.input_dir = params.input_dir ?: error('Debe especificarse el parámetro --input_dir')
-params.output_dir = params.output_dir ?: error('Debe especificarse el parámetro --output_dir')
-params.project_dir = params.project_dir ?: error('Debe especificarse el parámetro --project_dir')
+params.input_dir = params.input_dir ?: error('The parameter must be defined --input_dir')
+params.output_dir = params.output_dir ?: error('The parameter must be defined --output_dir')
+params.project_dir = params.project_dir ?: error('The parameter must be defined --project_dir')
 
 
 
@@ -54,8 +54,8 @@ params.cellpose_model_telomere = "${params.project_dir}/Scripts/cellpose/models/
 //params.NucDiam = 60
 //params.TelDiam = 6.20
 
-params.NucDiam = params.NucDiam ?: error('Debe especificarse el parámetro NucDiam')
-params.TelDiam = params.TelDiam ?: error('Debe especificarse el parámetro TelDiam')
+params.NucDiam = params.NucDiam ?: error('The parameter must be defined NucDiam')
+params.TelDiam = params.TelDiam ?: error('The parameter must be defined TelDiam')
 
 // Python params
 params.pythonPlots = "${params.project_dir}/Scripts/python/plot_analysis.py"
