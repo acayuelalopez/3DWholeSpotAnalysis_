@@ -106,4 +106,4 @@ The workflow includes the following steps:
 To run the pipeline, use the following command:
 
 ```bash
-nextflow run main.nf --input_dir <input_directory> --output_dir <output_directory> --project_dir <project_directory> --NucDiam <nuclei_diameter> --TelDiam <telomere_diameter> [--perTelomere] [--perNuclei] [--perImage] [--perAnimal]
+nextflow run workflow_nextflow.nf --input_dir <input_directory> --output_dir <output_directory> --project_dir <project_directory> --NucDiam <nuclei_diameter> --TelDiam <telomere_diameter> [--perTelomere] [--perNuclei] [--perImage] [--perAnimal]
